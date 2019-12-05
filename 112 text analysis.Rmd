@@ -1,0 +1,68 @@
+---
+title: "112project"
+author: "Sidong Wang"
+date: "12/4/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+library(readr)
+library(dplyr)
+library(readr)
+library(tidyr)
+library(stringr)
+library(ggplot2)
+# install.packages("factoextra")
+library(factoextra)
+# install.packages("stargazer")
+library(stargazer)
+# install.packages("tm")
+library(tm) # for text mining
+#install.packages("SnowballC")
+library(SnowballC)
+# install.packages("wordcloud")# for text stemming
+library(wordcloud) # word-cloud generator
+library(RColorBrewer) # color palettes
+```
+
+```{r}
+# stemfinal <- read.csv(file.choose())
+stemfinal <- read.csv("stemfinal.csv")
+```
+
+```{r}
+question_help<-stemfinal$HelpFactor[complete.cases(stemfinal$HelpFactor)]
+question_inhibit<-stemfinal$InhibitFactor[complete.cases(stemfinal$InhibitFactor)]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
